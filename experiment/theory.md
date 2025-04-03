@@ -1,3 +1,5 @@
+## Theory
+
 Pre-commissioning is a prior step to make any plant fully functional. The steps involved during pre-commissioning are listed below. Every step and its sequence is very important and in case the engineer in-charge misses any step it will lead to further complication and delay in pre-commissioning.  
 
 #### 1. Documentation Review
@@ -61,7 +63,7 @@ This type of checking is mostly handled by mechanical group as the process group
 -	Emergency shutdown systems
 -	Ventilation and exhaust systems
 -	Environmental monitoring systems
-It’s a joint activity of entire team involved in pre-commissioning.  Looking at safety of plant and personnel this activity needs to be handled with utmost care and pre approving fire alarms, and allied systems is a must before charging any panel or water trial.
+It's a joint activity of entire team involved in pre-commissioning.  Looking at safety of plant and personnel this activity needs to be handled with utmost care and pre approving fire alarms, and allied systems is a must before charging any panel or water trial.
 
 #### 8. Pre-Commissioning Cleaning
 
