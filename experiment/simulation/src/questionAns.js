@@ -82,7 +82,38 @@ function questionAns() {
         </div>
     </div>
 </div>
-        
+
+<div class="modal fade" id="pdfModal1" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">PDF Viewer</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <iframe id="pdfViewer1" width="100%" height="800px"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="pdfModal2" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">PDF Viewer</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <iframe id="pdfViewer2" width="100%" height="800px"></iframe>
+            </div>
+        </div>
+    </div>
+</div>        
     `;
     
     	 htm+='	<!-- 			    The Modal  ProStr -->'
@@ -231,10 +262,16 @@ function questionAns() {
       function PDFDemo() {
       console.log("Opening PDF Page:", pdfPageNo);
       let pdfWithPage = `${pdfUrl}#page=${pdfPageNo}`;
-      document.getElementById("pdfViewer").src = pdfWithPage;
-
-      var pdfModal = new bootstrap.Modal(document.getElementById("pdfModal"));
-      pdfModal.show();
+      if(pdfPageNo == 131){
+	      document.getElementById("pdfViewer1").src = pdfWithPage;
+	      var pdfModal = new bootstrap.Modal(document.getElementById("pdfModal1"));
+	      pdfModal.show();
+      }else if(pdfPageNo == 179){
+	      document.getElementById("pdfViewer2").src = pdfWithPage;
+	      var pdfModal = new bootstrap.Modal(document.getElementById("pdfModal2"));
+	      pdfModal.show();
+		  
+	  }
   }
 
 
