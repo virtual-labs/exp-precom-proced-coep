@@ -126,7 +126,7 @@ function questionAns() {
     +'		          <button type="button" class="close" data-dismiss="modal">&times;</button>'
     +'		        </div>'
     +'<!-- 		        Modal body -->'
-    +'		        <div class="modal-body" id="modal-message" style="color:red">'
+    +'		        <div class="modal-body" id="modal-message" style="color:brown">'
 
     +'		        </div>'
     +'<!-- 			        Modal footer -->'
@@ -150,8 +150,9 @@ function questionAns() {
 
     	
     	 $("#pdf1").click(function () {
-    	      console.log("Opening PDF Page:", pdfPageNo);
     	      let pdfWithPage = `${pdfUrl}#page=${pdfPageNo}`;
+    	      console.log("Opening PDF Page:", pdfWithPage);
+    	      
     	      document.getElementById("pdfViewer").src = pdfWithPage;
 
     	      var pdfModal = new bootstrap.Modal(document.getElementById("pdfModal"));
@@ -260,8 +261,9 @@ function questionAns() {
         
         
       function PDFDemo() {
-      console.log("Opening PDF Page:", pdfPageNo);
       let pdfWithPage = `${pdfUrl}#page=${pdfPageNo}`;
+      console.log("Opening PDF Page:", pdfWithPage);
+      
       if(pdfPageNo == 131){
 	      document.getElementById("pdfViewer1").src = pdfWithPage;
 	      var pdfModal = new bootstrap.Modal(document.getElementById("pdfModal1"));
@@ -278,7 +280,7 @@ function questionAns() {
       $('#quiz-form').on('submit', function (e) {
     	  $("#modal-message").css({
     		    "font-weight": "bold",
-    		    "color": "red"
+    		    "color": "brown"
     		});
           e.preventDefault();
           let score = 0;
