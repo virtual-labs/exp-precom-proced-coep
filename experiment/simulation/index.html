@@ -1,7 +1,7 @@
 
 <html>
 <head>
-<title>Pre_Commissioning</title>
+<title>Pre-Commissioning</title>
 
 </head>
  <meta charset="utf-8">
@@ -52,7 +52,7 @@
 <!-- 		 <button type="button" id="tagDetails" class="btn btn-danger btn1" data-toggle="modal" data-target="#proStr"><b>Tag Details </b></button> -->
 <!-- 	     <button type="button" id="simDemo" class="btn btn-danger btn1" data-toggle="modal" data-target="#proStr"><b>Problem statement</b> </button> -->
 		    <button type="button" id="procedure" class="btn btn-danger btn1 button1" data-toggle="modal" data-target="#proStr" hidden><b>Procedure </b></button>
-		    <button type="button" class="btn btn-danger btn1 button1"  id="report" style="margin-top:10px;"  hidden>Download report </button> 
+		    <button type="button" class="btn btn-danger btn1 button1"  id="report" style="margin-top:10px;background-color:teal"  hidden>Download report </button> 
 	     </div>
 	     
 	   
@@ -88,9 +88,7 @@
 <!--         </div> -->
  	  
     <div class="row titlePart" id="Header"  ><center>PRE-COMMISSIONING</center></div>
-     
-
-	<div class="container-fluid" style="margin-top:10px; " id="mainDiv" >
+     <div class="container-fluid" style="margin-top:10px; " id="mainDiv" >
 	
  		<div class="row justify-content-center" style="margin-bottom:20px;">
             <div class="col-md-4 instruction-box">
@@ -98,9 +96,9 @@
                 <span class="fw-bold" style="    font-family: emoji;
     font-size: 18px;
     word-spacing: 1px;"><ol>
-    <li>Wiring Diagram - Boiler & Heat Exchanger (Page 134)</li>
-    <li>Wiring Diagram - Boiler & Heat Exchanger (Page 137)</li>
-    <li>Ladder Diagram - Evaporator Plant (Page 181)</li>
+    <li>Wiring Diagram - Boiler & Heat Exchanger (Page 129)</li>
+    <li>Wiring Diagram - Boiler & Heat Exchanger (Page 131)</li>
+    <li>Ladder Diagram - Evaporator Plant (Page 179)</li>
 </ol>
    
              </span>
@@ -109,8 +107,9 @@
      
 
 	</div>
-	
-	<div class="row justify-content-center" ID="panelDiv">
+     
+     
+	<div class="row justify-content-center" ID="panelDiv" style="margin-bottom:50px;">
             
              <div class="col-md-4" style="border-style: solid;padding:5px ;margin:5px;">
                 <div class="card p-3">
@@ -122,6 +121,7 @@
             </div>
         
         </div>
+
 	
 	 <div class="modal fade " id="refMimicModal">
 		    <div class="modal-dialog modal-xl" >
@@ -213,21 +213,20 @@ $("#btnStart").click(function(evt) {
 	questionAns();
 });
 
-$('#report').on('click', function() {
-<!--			$('#report').prop("hidden",true);-->
-		    html2canvas(document.querySelector("#mainDiv")).then(canvas => {
-		        // Append the screenshot canvas to the body
-		        document.body.appendChild(canvas);
-		        $("canvas").css("display","none");
-		        // Optionally save the screenshot as an image
-		        var link = document.createElement('a');
-		        link.download = 'Pre_Commissioning_report.png';
-		        link.href = canvas.toDataURL();
-		        link.click();
-		    });
-		});
+// $('#report').on('click', function() {
+// <!--			$('#report').prop("hidden",true);-->
+// 		    html2canvas(document.querySelector("#mainDiv")).then(canvas => {
+// 		        // Append the screenshot canvas to the body
+// 		        document.body.appendChild(canvas);
+// 		        $("canvas").css("display","none");
+// 		        // Optionally save the screenshot as an image
+// 		        var link = document.createElement('a');
+// 		        link.download = 'Pre_Commissioning_report.png';
+// 		        link.href = canvas.toDataURL();
+// 		        link.click();
+// 		    });
+// 		});
 
 </script>
-<script >
-    </script>
+
 </html>
