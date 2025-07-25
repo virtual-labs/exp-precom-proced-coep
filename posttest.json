@@ -1,0 +1,82 @@
+{
+    "version": 2,
+    "questions": [
+        {
+            "question": "What is the purpose of the pre-commissioning checklist?",
+            "answers": {
+                "a": "To verify the completion of commissioning activities ",
+                "b": "To identify potential hazards and risks ",
+                "c": "To ensure equipment is properly installed and aligned ",
+                "d": "To develop commissioning procedures"
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "What type of testing is performed on electrical systems during pre-commissioning?",
+            "answers": {
+                "a": "Functional testing",
+                "b": "Loop checking and calibration ",
+                "c": "Pneumatic pressure testing ",
+                "d": "Hydrostatic pressure testing"
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "What document is used to verify the completion of pre-commissioning activities?",
+            "answers": {
+                "a": "Commissioning certificate ",
+                "b": "Pre-commissioning checklist ",
+                "c": "Project completion report ",
+                "d": "Plant startup report"
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "What is the primary focus of safety and environmental checks during pre-commissioning?",
+            "answers": {
+                "a": "To ensure equipment is properly installed ",
+                "b": "To verify system performance under load ",
+                "c": "To identify potential hazards and risks ",
+                "d": "To train operators on safety procedures"
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "What is the purpose of functional testing during pre-commissioning?",
+            "answers": {
+                "a": "To test individual components ",
+                "b": "To test system performance under load ",
+                "c": "To verify system functionality and performance ",
+                "d": "To train operators on system operation"
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "What is the final step in the pre-commissioning process?",
+            "answers": {
+                "a": "Development of commissioning procedures ",
+                "b": "Functional testing of systems and equipment ",
+                "c": "Handover of the plant to operations ",
+                "d": "Completion of pre-commissioning documentation"
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "What is the primary benefit of pre-commissioning activities?",
+            "answers": {
+                "a": "Reduced startup time ",
+                "b": "Improved plant performance ",
+                "c": "Enhanced safety and reduced risk ",
+                "d": "Increased operator training"
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        }
+    ]
+}
