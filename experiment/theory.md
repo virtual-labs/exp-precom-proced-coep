@@ -4,7 +4,7 @@ Pre-commissioning is a prior step to make any plant fully functional. The steps 
 
 #### 1. Documentation Review
 
-Review of project documents, including:
+##### Review of project documents, including:
 -	P&IDs (Piping and Instrumentation Diagrams)
 -	Process flow diagrams
 -	Instrumentation and electrical diagrams
@@ -16,7 +16,7 @@ It is always a recommended practice to keep all the documents which are up to da
 
 #### 2. Site Preparation
 
--	Ensure site is ready for commissioning, including:
+##### Ensure site is ready for commissioning, including:
 -	Clearing of construction debris
 -	Installation of necessary utilities (e.g. power, water, air)
 -	Provision of access roads and walkways
@@ -25,7 +25,7 @@ Before mobilizing or announcing the pre-commissioning schedule it is essential t
 
 #### 3. Equipment Inspection
 
--	Visual inspection of equipment, including:
+##### Visual inspection of equipment, including:
 -	Verification of equipment installation and alignment
 -	Check for damage or defects
 -	Verification of equipment identification and labeling
@@ -33,7 +33,7 @@ While starting the pre-commissioning activities it is essential to visually insp
 
 #### 4. Instrumentation and Electrical Testing
 
--	Testing of instrumentation and electrical systems, including:
+##### Testing of instrumentation and electrical systems, including:
 -	Loop checking and calibration of instruments
 -	Testing of electrical circuits and wiring
 -	Verification of instrument and electrical system functionality
@@ -41,7 +41,7 @@ Most crucial part of the pre-commissioning activity will be testing of instrumen
 
 #### 5. Piping and Tubing Testing
 
--	Testing of piping and tubing systems, including:
+##### Testing of piping and tubing systems, including:
 -	Hydrostatic pressure testing
 -	Pneumatic pressure testing
 -	Leak testing
@@ -50,7 +50,7 @@ For the safe operation of the plant it is necessary that the piping including im
 
 #### 6. Mechanical Completion
 
--	Verification of mechanical completion, including:
+##### Verification of mechanical completion, including:
 -	Verification of equipment installation and alignment
 -	Check for proper installation of mechanical components (e.g. valves, pumps, motors)
 -	Verification of mechanical system functionality
@@ -58,7 +58,7 @@ This type of checking is mostly handled by mechanical group as the process group
 
 #### 7. Safety and Environmental Checks
 
--	Verification of safety and environmental systems, including:
+##### Verification of safety and environmental systems, including:
 -	Fire suppression systems
 -	Emergency shutdown systems
 -	Ventilation and exhaust systems
@@ -67,7 +67,7 @@ It's a joint activity of entire team involved in pre-commissioning.  Looking at 
 
 #### 8. Pre-Commissioning Cleaning
 
--	Cleaning of equipment and systems, including:
+##### Cleaning of equipment and systems, including:
 -	Chemical cleaning of piping and equipment
 -	Mechanical cleaning of equipment and systems
 -	Verification of cleanliness and freedom from contaminants
@@ -75,7 +75,7 @@ While installing and fabricating the lines a lot of welding burr must have depos
 
 #### 9. Functional Testing
 
--	Functional testing of systems and equipment, including:
+##### Functional testing of systems and equipment, including:
 -	Testing of control systems and instrumentation
 -	Testing of electrical and mechanical systems
 -	Verification of system functionality and performance
@@ -83,7 +83,7 @@ The testing of control system is carried at two places one at the system integra
 
 #### 10. Operator Training
 
--	Training of operators, including:
+##### Training of operators, including:
 -	Familiarization with plant systems and equipment
 -	Training on operation and maintenance procedures
 -	Verification of operator competence
@@ -91,7 +91,7 @@ Training operators before final commissioning is important as the success depend
 
 #### 11. Development of Commissioning Procedures
 
--	Development of commissioning procedures, including:
+##### Development of commissioning procedures, including:
 -	Development of startup and shutdown procedures
 -	Development of normal operation procedures
 -	Development of emergency response procedures
@@ -99,7 +99,7 @@ Pre commissioning is a pre-requisite for the final commissioning and hand over a
 
 #### 12. Development of Testing and Inspection Plans
 
--	Development of testing and inspection plans, including:
+##### Development of testing and inspection plans, including:
 -	Development of testing and inspection schedules
 -	Identification of testing and inspection requirements
 -	Verification of testing and inspection procedures
@@ -107,7 +107,7 @@ There are certain guide lines for generating testing schedules for all the field
 
 #### 13. Coordination with Vendors and Contractors
 
--	Coordination with vendors and contractors, including:
+##### Coordination with vendors and contractors, including:
 -	Verification of vendor and contractor responsibilities
 -	Coordination of vendor and contractor activities
 -	Verification of vendor and contractor performance
@@ -115,7 +115,7 @@ As the plants are huge in size and complicated also the ready contact with vendo
 
 #### 14. Development of Commissioning Schedule
 
--	Development of commissioning schedule, including:
+##### Development of commissioning schedule, including:
 -	Identification of commissioning milestones and deadlines
 -	Development of commissioning timelines
 -	Verification of commissioning schedule
@@ -123,7 +123,7 @@ As part of next immediate activity the commissioning schedule need to be chalked
 
 #### 15. Risk Assessment and Hazard Identification
 
--	Risk assessment and hazard identification, including:
+##### Risk assessment and hazard identification, including:
 -	Identification of potential hazards and risks
 -	Assessment of risk levels and potential consequences
 -	Development of mitigation strategies and contingency plans
