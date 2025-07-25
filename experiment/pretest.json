@@ -35,17 +35,6 @@
             "difficulty": "beginner"
         },
         {
-            "question": "What is the purpose of functional testing?",
-            "answers": {
-                "a": "To test individual components ",
-                "b": "To test system performance under load ",
-                "c": "To verify system functionality and performance ",
-                "d": "To train operators on system operation"
-            },
-            "correctAnswer": "c",
-            "difficulty": "beginner"
-        },
-        {
             "question": "Who is responsible for developing commissioning procedures?",
             "answers": {
                 "a": "Plant operators ",
@@ -79,17 +68,6 @@
             "difficulty": "beginner"
         },
         {
-            "question": "What document is used to verify the completion of pre-commissioning activities?",
-            "answers": {
-                "a": "Commissioning certificate ",
-                "b": "Pre-commissioning checklist ",
-                "c": "Project completion report ",
-                "d": "Plant startup report"
-            },
-            "correctAnswer": "b",
-            "difficulty": "beginner"
-        },
-        {
             "question": "What is the purpose of operator training during pre-commissioning?",
             "answers": {
                 "a": "To train operators on maintenance procedures ",
@@ -98,17 +76,6 @@
                 "d": "To develop operator training programs"
             },
             "correctAnswer": "b",
-            "difficulty": "beginner"
-        },
-        {
-            "question": "What is the final step in the pre-commissioning process?",
-            "answers": {
-                "a": "Development of commissioning procedures ",
-                "b": "Functional testing of systems and equipment ",
-                "c": "Handover of the plant to operations ",
-                "d": "Completion of pre-commissioning documentation"
-            },
-            "correctAnswer": "c",
             "difficulty": "beginner"
         }
     ]

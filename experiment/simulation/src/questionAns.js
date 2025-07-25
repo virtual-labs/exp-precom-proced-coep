@@ -7,7 +7,6 @@ var attempts=3;
 let pdfPageNo=129;
 let pdfUrl="images/Referance.pdf";
 
-let unanswered = 0;
 let totalQuestions=12;
 let pageScores = {}; // Object to store scores for each page
 function questionAns() {
@@ -284,7 +283,8 @@ function questionAns() {
     		});
           e.preventDefault();
           let score = 0;
-         
+         let tmpQues = 0;
+		 let unanswered = 0;
         	  
 	    	  pages[currentPage].forEach((item, index) => {
 	              let selected = $(`input[name='question${index}']:checked`).val(); // Keep selection intact
@@ -296,10 +296,12 @@ function questionAns() {
 	          });
 	    	  if (unanswered > 0) {
 	              $("#modal-message").html(`Please answer all questions before submitting.`);
-	              return;
-	              
+	              return;	              
 	          }
     	  console.log("score "+score);
+		  
+		  if(currentPage == 0){tmpQues = 3;}else if(currentPage == 1){tmpQues = 3;}else if(currentPage == 2){tmpQues = 6;}
+		  
           // Store the score for the current page
           pageScores[currentPage] = score;
 
@@ -309,19 +311,28 @@ function questionAns() {
               resultSummary += `Page ${parseInt(page) + 1}: ${pageScores[page]} / ${pages[page].length} correct <br>`;
           });
 
-          if (score === totalQuestions) {
+          if (score === tmpQues) {
         	  $("#modal-message").css({
       		    "font-weight": "bold",
       		    "color": "green"
       		});
               resultSummary += `<br>All answers are correct for this page!`;
-              $('#next-page').prop("disabled", false);
+			  if(currentPage == 2){
+				$('#submitBtn,#next-page').prop("hidden", true);
+				$('#result').prop("hidden", false); 
+			  }else{			  
+				$('#next-page').prop("disabled", false);
+			  }
           } else {
               attempts--;
               if (attempts > 0) {
-                  resultSummary += `<br>You got ${score} out of ${totalQuestions} correct on this page. ${attempts} attempts left.`;
+                  resultSummary += `<br>You got ${score} out of ${tmpQues} correct on this page.<br> ${attempts} attempts left.`;
               } else {
-                  resultSummary += `<br>You got ${score} out of ${totalQuestions} correct. No more attempts left. Moving to the next page.`;
+				  if(currentPage == 2){
+					resultSummary += `<br>You got ${score} out of ${tmpQues} correct. <br>No more attempts left.`;
+				  }else{
+					resultSummary += `<br>You got ${score} out of ${tmpQues} correct. <br>No more attempts left. Moving to the next page by clicking on Next button.`;
+				  }
                   $('#next-page').prop("disabled", false);
                   $('#submitBtn').prop("disabled", true);
                   
@@ -343,85 +354,4 @@ function questionAns() {
 
     });
 
-//    function showModalMessage(message) {
-//        $("#modal-message").html(message);
-//        $("#messageModal").modal("show");
-//    }
 }
-
-//$('#prev-page').click(function () {
-//	if (currentPage > 0) {
-//  console.log("currentPage: " + currentPage);
-//  
-// 
-//  
-//  // Assign different PDF page numbers based on the current quiz page
-//  if (currentPage === 1) {
-//      pdfPageNo = 129;  // Page 1 of quiz -> PDF Page 129
-//  } else if (currentPage === 2) {
-//      pdfPageNo = 132;  // Page 2 of quiz -> PDF Page 132
-//  } else if (currentPage === 3) {
-//      pdfPageNo = 179;  // Page 3 of quiz -> PDF Page 179
-//  }
-//
-//  // Generate the "View PDF" button dynamically
-//  let htm = `
-//      <button class="btn btn-primary" id="pdf" onclick="openPdfModal('images/Referance.pdf', ${pdfPageNo})">
-//          View PDF Page ${pdfPageNo}
-//      </button>
-//  `;
-//  $("#btnDiv").html(htm);
-//
-//  // Ensure the function is defined globally
-//  window.openPdfModal = function (pdfUrl, pdfPageNo) {
-//      console.log("Opening PDF Page:", pdfPageNo);
-//      let pdfWithPage = `${pdfUrl}#page=${pdfPageNo}`;
-//      document.getElementById("pdfViewer").src = pdfWithPage;
-//
-//      var pdfModal = new bootstrap.Modal(document.getElementById("pdfModal"));
-//      pdfModal.show();
-//  };
-//
-//  // Move to the previous page and re-render questions
-//  currentPage--;
-//  renderQuestions();
-//  $('#result').html(''); // Clear previous result
-//}});
-
-//$('#next-page').click(function () {
-//  if (currentPage < pages.length - 1) {
-//  	console.log("currentPage"+currentPage);
-//  	  // Assign different PDF page numbers based on the current quiz page
-//      if (currentPage === 1) {
-//          pdfPageNo = 129;  // Page 1 of quiz -> PDF Page 129
-//      } else if (currentPage === 2) {
-//          pdfPageNo = 132;  // Page 2 of quiz -> PDF Page 132
-//      } else if (currentPage === 3) {
-//          pdfPageNo = 179;  // Page 3 of quiz -> PDF Page 179
-//      }
-//
-//      // Generate the "View PDF" button dynamically
-//      let htm = `
-//          <button class="btn btn-primary" id="pdf" onclick="openPdfModal('images/Referance.pdf', ${pdfPageNo})">
-//              View PDF Page ${pdfPageNo}
-//          </button>
-//      `;
-//      $("#btnDiv").html(htm);
-//
-//      // Ensure the function is defined globally
-//      window.openPdfModal = function (pdfUrl, pdfPageNo) {
-//          console.log("Opening PDF Page:", pdfPageNo);
-//          let pdfWithPage = `${pdfUrl}#page=${pdfPageNo}`;
-//          document.getElementById("pdfViewer").src = pdfWithPage;
-//
-//          var pdfModal = new bootstrap.Modal(document.getElementById("pdfModal"));
-//          pdfModal.show();
-//      };
-//  	
-//  	
-//      currentPage++;
-//      renderQuestions();
-//      $('#result').html(''); // Clear previous result
-//      
-//  }
-//});
